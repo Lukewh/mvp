@@ -90,7 +90,9 @@ input:focus + .focus-reveal {
 #carousel {
     background-color: #0d6c7f;
     background-image: linear-gradient(to bottom, #015263, #338b9f);
+    background-size: cover;
     color: #fff;
+    min-height: 100vh;
     overflow: hidden;
     position: relative;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -178,12 +180,6 @@ input:focus + .focus-reveal {
 
 @media (min-width: 1350px) {
 
-    #carousel {
-        background-image: url("../images/screenshots/background.jpg");
-        background-size: cover;
-        min-height: 100vh;
-    }
-
     #carousel .slide > .row {
         margin: 0 calc(50% - 700px);
         padding-top: 28px;
@@ -214,6 +210,50 @@ input:focus + .focus-reveal {
 
     #carousel .slide > .row > .column .column:nth-child(2) {
         max-width: 256px;
+    }
+
+}
+
+/************
+* Carousel  *
+************/
+@media (min-width: 1025px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/background.jpg");
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/1024/background.jpg");
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/640/background.jpg");
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/480/background.jpg");
+    }
+
+}
+
+
+@media (max-width: 320px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/320/background.jpg");
     }
 
 }
