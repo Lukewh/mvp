@@ -90,6 +90,7 @@ input:focus + .focus-reveal {
 #carousel {
     background-color: #0d6c7f;
     background-image: linear-gradient(to bottom, #015263, #338b9f);
+    background-image: url("../images/screenshots/responsive-images/background-small.jpg");
     background-size: cover;
     color: #fff;
     min-height: 100vh;
@@ -217,43 +218,26 @@ input:focus + .focus-reveal {
 /************
 * Carousel  *
 ************/
-@media (min-width: 1025px) {
+@media all and (min-width: 481px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/responsive-images/background-medium.jpg");
+    }
+
+}
+
+@media all and (min-width: 721px) {
+
+    #carousel {
+        background-image: url("../images/screenshots/responsive-images/background-large.jpg");
+    }
+
+}
+
+@media all and (min-width: 1280px) {
 
     #carousel {
         background-image: url("../images/screenshots/background.jpg");
-    }
-
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-
-    #carousel {
-        background-image: url("../images/screenshots/1024/background.jpg");
-    }
-
-}
-
-@media (min-width: 481px) and (max-width: 640px) {
-
-    #carousel {
-        background-image: url("../images/screenshots/640/background.jpg");
-    }
-
-}
-
-@media (min-width: 321px) and (max-width: 480px) {
-
-    #carousel {
-        background-image: url("../images/screenshots/480/background.jpg");
-    }
-
-}
-
-
-@media (max-width: 320px) {
-
-    #carousel {
-        background-image: url("../images/screenshots/320/background.jpg");
     }
 
 }
